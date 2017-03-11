@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<!-- 加入静态模板 -->
+{% load staticfiles %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>苹果（山寨版）</title>
+    <link rel="stylesheet" href="{% static 'css/semantic.css' %}">
+  </head>
+
+  <body>
+    <!-- 顶部 -->
+    <div class="ui inverted vertical basic segment">
+      <!-- 导航菜单栏 -->
+      <div class="ui inverted fixed fitted borderless fluid nine item menu">
+        <a href="#" class="item">
+          <i class="apple icon "></i>
+        </a>
+        <a href="#" class="item">Mac</a>
+        <a href="#" class="item">iPad</a>
+        <a href="#" class="item">iPhone</a>
+        <a href="#" class="item">Watch</a>
+        <a href="#" class="item">Music</a>
+        <a href="#" class="item">技术支持</a>
+        <a href="#" class="item"><i class="search icon"></i></a>
+        <a href="#" class="item"><i class="lock icon"></i></a>
+      </div>
+    </div>
+
+    <!-- 图片部分 -->
+    <div class="ui inverted vertical fitted segment">
+      <!-- ui image 可以使得图片自适应 -->
+      <div class="ui image">
+        <img src="{% static 'images/banner.png' %}" alt="">
+      </div>
+    </div>
+
+    <!-- 细节图 -->
+    <div class="ui basic segment">
+      <div class="ui grid">
+        <div class="four wide column">
+          <div class="ui image">
+            <img src="{% static 'images/img1.png' %}" alt="">
+          </div>
+        </div>
+
+        <div class="four wide column">
+          <div class="ui image">
+            <img src="{% static 'images/img2.png' %}" alt="">
+          </div>
+        </div>
+
+        <div class="four wide column">
+          <div class="ui image">
+            <img src="{% static 'images/img3.png' %}" alt="">
+          </div>
+        </div>
+
+        <div class="four wide column">
+          <div class="ui image">
+            <img src="{% static 'images/img4.png' %}" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 底部 -->
+    <div class="ui padded basic segment">
+      <div class="ui container">
+        <p style="color:gray;">双镜头摄像头仅于 iPhone 7 Plus 提供。亮黑色外观仅于 128GB 及以上存储容量的机型提供。</p>
+        <hr>
+        <div class="ui five column grid">
+          <div class="column">
+            <div class="ui vertical text menu">
+              <div class="item">
+                <div class="ui header">
+                  <h6>选购及了解</h6>
+                </div>
+                <div class="item">
+                  <a href="#" class="ui link" style="color:gray">Mac</a>
+                </div>
+                <div class="item">
+                  <a href="#" class="ui link" style="color:gray">iPad</a>
+                </div>
+                <div class="item">
+                  <a href="#" class="ui link" style="color:gray">iPhone</a>
+                </div>
+                <div class="item">
+                  <a href="#" class="ui link" style="color:gray">Watch</a>
+                </div>
+                <div class="item">
+                  <a href="#" class="ui link" style="color:gray">Music</a>
+                </div>
+                <div class="item">
+                  <a href="#" class="ui link" style="color:gray">iTunes</a>
+                </div>
+                <div class="item">
+                  <a href="#" class="ui link" style="color:gray">iPod</a>
+                </div>
+                <div class="item">
+                  <a href="#" class="ui link" style="color:gray">配件</a>
+                </div>
+                <div class="item">
+                  <a href="#" class="ui link" style="color:gray">App Store充值卡</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="ui vertical text menu">
+              <div class="item">
+                <div class="ui header">
+                  <h6>Apple Store商店</h6>
+                </div>
+                <div class="item">
+                  <a href="#" class="ui link" style="color:gray">查找零售店</a>
+                </div>
+                <div class="item">
+                  <a href="#" class="ui link" style="color:gray">Genius Bar 天才吧</a>
+                </div>
+                <div class="item">
+                  <a href="#" class="ui link" style="color:gray">讲座和学习</a>
+                </div>
+                <div class="item">
+                  <a href="#" class="ui link" style="color:gray">青少年活动</a>
+                </div>
+                <div class="item">
+                  <a href="#" class="ui link" style="color:gray">Apple Store App</a>
+                </div>
+                <div class="item">
+                  <a href="#" class="ui link" style="color:gray">翻新和优惠</a>
+                </div>
+                <div class="item">
+                  <a href="#" class="ui link" style="color:gray">分期付款</a>
+                </div>
+                <div class="item">
+                  <a href="#" class="ui link" style="color:gray">重复使用和循环利用</a>
+                </div>
+                <div class="item">
+                  <a href="#" class="ui link" style="color:gray">订单状态</a>
+                </div>
+                <div class="item">
+                  <a href="#" class="ui link" style="color:gray">选购帮助</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="ui vertical text menu">
+              <div class="item">
+                <div class="ui header">
+                  <h6>教育应用</h6>
+                </div>
+                <div class="item">
+                  <a href="#"class="ui link" style="color: grey;">Apple 与教育</a>
+                </div>
+                <div class="item">
+                  <a href="#"class="ui link" style="color: grey;">高校师生选购</a>
+                </div>
+              </div>
+              <div class="item">
+                <div class="ui header">
+                  <h6>商务应用</h6>
+                </div>
+                <div class="item">
+                  <a href="#"class="ui link" style="color: grey;">Apple 与商务</a>
+                </div>
+                <div class="item">
+                  <a href="#"class="ui link" style="color: grey;">商务选购</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="ui vertical text menu">
+              <div class="item">
+                <div class="ui header">
+                  <h6>账户</h6>
+                </div>
+                <div class="item">
+                  <a href="#" class="ui link" style="color: grey;">管理你的 Apple ID</a>
+                </div>
+                <div class="item">
+                  <a href="#" class="ui link" style="color: grey;">Apple Store 帐户</a>
+                </div>
+                <div class="item">
+                  <a href="#" class="ui link" style="color: grey;">iCloud.com</a>
+                </div>
+              </div>
+              <div class="item">
+                <div class="ui header">
+                  <h6>Apple 价值观</h6>
+                </div>
+                <div class="item">
+                  <a href="#" class="ui link" style="color: grey;">辅助功能</a>
+                </div>
+                <div class="item">
+                  <a href="#" class="ui link" style="color: grey;">环境责任</a>
+                </div>
+                <div class="item">
+                  <a href="#" class="ui link" style="color: grey;">隐私</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="ui vertical text menu">
+              <div class="item">
+                <div class="ui header">
+                  <h6>关于Apple</h6>
+                </div>
+                <div class="item">
+                  <a href="#" class="ui link" style="color: grey;">Apple 资讯</a>
+                </div>
+                <div class="item">
+                  <a href="#" class="ui link" style="color: grey;">工作机会</a>
+                </div>
+                <div class="item">
+                  <a href="#" class="ui link" style="color: grey;">媒体资讯</a>
+                </div>
+                <div class="item">
+                  <a href="#" class="ui link" style="color: grey;">活动</a>
+                </div>
+                <div class="item">
+                  <a href="#" class="ui link" style="color: grey;">联系 Apple</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
