@@ -20,3 +20,8 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^index', index, name="index"),
 ]
+
+from django.conf import settings
+if settings.DEBUG is False:
+    urlpatterns += urlpatterns('', url(r'^static/(?P<path>.*)$',
+    'django.views.static.serve', { 'document_root': settings.STATIC_ROOT}),)
